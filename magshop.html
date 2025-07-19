@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MagShop - Maggenzim</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/favicon_maggenzim/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_maggenzim/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_maggenzim/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_maggenzim/apple-touch-icon-180x180.png"
+    />
+    <meta name="theme-color" content="#4a7c59" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/LogoWebMag.png" alt="Maggenzim Logo" />
+            </a>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="magshop.html">MagShop</a></li>
+            <li><a href="magteam.html">MagTeam</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="https://wa.me/081278900987" class="cta-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Sehatkan Ayam
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+      <div class="container">
+        <h1>MagShop</h1>
+        <p>Koleksi lengkap produk Maggenzim untuk kebutuhan ternak ayam Anda</p>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="shop-products">
+      <div class="container">
+        <div class="shop-grid">
+          <!-- Pakan Starter -->
+          <div class="shop-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="shop-image">
+              <img src="images/produk/MashMaggenzim.png" alt="Pakan Starter" />
+              <div class="shop-overlay">
+                <span class="category">Pakan</span>
+              </div>
+            </div>
+            <div class="shop-info">
+              <h3>Pakan Starter</h3>
+              <p class="shop-price">Rp 125.000<span>/25kg</span></p>
+              <p class="shop-description">
+                Nutrisi lengkap untuk anak ayam umur 0-3 minggu
+              </p>
+              <div class="shop-buttons">
+                <button
+                  class="btn-detail"
+                  onclick="window.location.href='product-detail.html?product=starter'"
+                >
+                  <i class="fas fa-eye"></i>
+                  Lihat Pakan
+                </button>
+                <a
+                  href="https://wa.me/081278900987?text=Halo, saya ingin membeli Pakan Starter 25kg seharga Rp 125.000. Bisa tolong diproses?"
+                  class="btn-buy"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Beli Pakan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pakan Grower -->
+          <div class="shop-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="shop-image">
+              <img src="images/produk/CrumbMaggenzim.png" alt="Pakan Grower" />
+              <div class="shop-overlay">
+                <span class="category">Pakan</span>
+              </div>
+            </div>
+            <div class="shop-info">
+              <h3>Pakan Grower</h3>
+              <p class="shop-price">Rp 120.000<span>/25kg</span></p>
+              <p class="shop-description">
+                Formula khusus untuk ayam umur 4-6 minggu
+              </p>
+              <div class="shop-buttons">
+                <button
+                  class="btn-detail"
+                  onclick="window.location.href='product-detail.html?product=grower'"
+                >
+                  <i class="fas fa-eye"></i>
+                  Lihat Pakan
+                </button>
+                <a
+                  href="https://wa.me/081278900987?text=Halo, saya ingin membeli Pakan Grower 25kg seharga Rp 120.000. Bisa tolong diproses?"
+                  class="btn-buy"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Beli Pakan
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Smart Detector -->
+          <div class="shop-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="shop-image">
+              <img src="images/produk/SDMaggenzim.png" alt="Smart Detector" />
+              <div class="shop-overlay">
+                <span class="category">Alat</span>
+              </div>
+            </div>
+            <div class="shop-info">
+              <h3>Smart Detector</h3>
+              <p class="shop-price">Rp 2.500.000<span>/unit</span></p>
+              <p class="shop-description">
+                Alat monitoring kesehatan ayam berbasis IoT
+              </p>
+              <div class="shop-buttons">
+                <button
+                  class="btn-detail"
+                  onclick="window.location.href='product-detail.html?product=detector'"
+                >
+                  <i class="fas fa-eye"></i>
+                  Lihat Alat
+                </button>
+                <a
+                  href="https://wa.me/081278900987?text=Halo, saya ingin membeli Smart Detector seharga Rp 2.500.000. Bisa tolong diproses?"
+                  class="btn-buy"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Beli Alat
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paket Lengkap Starter -->
+          <div
+            class="shop-card featured"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="shop-image">
+              <img src="images/paket-starter.jpg" alt="Paket Lengkap Starter" />
+              <div class="shop-overlay">
+                <span class="category featured-category">Paket</span>
+              </div>
+              <div class="featured-badge">
+                <i class="fas fa-fire"></i>
+                Terpopuler
+              </div>
+            </div>
+            <div class="shop-info">
+              <h3>Paket Lengkap Starter</h3>
+              <p class="shop-price">Rp 350.000<span>/paket</span></p>
+              <div class="original-price">Rp 370.000</div>
+              <p class="shop-description">
+                3 jenis pakan + Smart Detector (hemat Rp 20.000)
+              </p>
+              <div class="shop-buttons">
+                <button
+                  class="btn-detail"
+                  onclick="window.location.href='product-detail.html?product=paket-starter'"
+                >
+                  <i class="fas fa-eye"></i>
+                  Lihat Paket
+                </button>
+                <a
+                  href="https://wa.me/081278900987?text=Halo, saya ingin membeli Paket Lengkap Starter seharga Rp 350.000. Bisa tolong diproses?"
+                  class="btn-buy"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Beli Paket
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paket Ekonomis -->
+          <div class="shop-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="shop-image">
+              <img src="images/paket-ekonomis.jpg" alt="Paket Ekonomis" />
+              <div class="shop-overlay">
+                <span class="category">Paket</span>
+              </div>
+            </div>
+            <div class="shop-info">
+              <h3>Paket Ekonomis</h3>
+              <p class="shop-price">Rp 200.000<span>/paket</span></p>
+              <div class="original-price">Rp 215.000</div>
+              <p class="shop-description">
+                2 jenis pakan pilihan (hemat Rp 15.000)
+              </p>
+              <div class="shop-buttons">
+                <button
+                  class="btn-detail"
+                  onclick="window.location.href='product-detail.html?product=paket-ekonomis'"
+                >
+                  <i class="fas fa-eye"></i>
+                  Lihat Paket
+                </button>
+                <a
+                  href="https://wa.me/081278900987?text=Halo, saya ingin membeli Paket Ekonomis seharga Rp 200.000. Bisa tolong diproses?"
+                  class="btn-buy"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Beli Paket
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="shop-benefits">
+      <div class="container">
+        <h2>Keunggulan Berbelanja di MagShop</h2>
+        <div class="benefits-grid">
+          <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="benefit-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Pengiriman Cepat</h3>
+            <p>
+              Pengiriman ke seluruh Indonesia dengan jaminan produk sampai
+              dengan aman
+            </p>
+          </div>
+          <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="benefit-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Kualitas Terjamin</h3>
+            <p>
+              Semua produk telah melalui quality control ketat dan memiliki
+              sertifikat
+            </p>
+          </div>
+          <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="benefit-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Konsultasi Gratis</h3>
+            <p>
+              Tim ahli kami siap membantu konsultasi kebutuhan pakan ternak Anda
+            </p>
+          </div>
+          <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="benefit-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h3>Harga Bersaing</h3>
+            <p>
+              Dapatkan harga terbaik dengan kualitas premium langsung dari
+              produsen
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="logo">
+              <img src="images/LogoWebMag.png" alt="Maggenzim Logo" />
+            </div>
+            <p>
+              Exfarm Universitas Jenderal Soedirman, Fakultas Peternakan, Jl.
+              Grendeng No. 9
+            </p>
+          </div>
+          <div class="footer-center">
+            <div class="footer-nav">
+              <h4>Navigasi</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="magteam.html">MagTeam</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>
+                  <a
+                    href="https://wa.me/081278900987"
+                    target="_blank"
+                    rel="noopener"
+                    >Pesan Maggenzim</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-products">
+              <h4>Produk Kami</h4>
+              <ul>
+                <li>
+                  <a href="product-detail.html?product=starter"
+                    >Pakan Starter</a
+                  >
+                </li>
+                <li>
+                  <a href="product-detail.html?product=grower">Pakan Grower</a>
+                </li>
+                <li>
+                  <a href="product-detail.html?product=detector"
+                    >Smart Detector</a
+                  >
+                </li>
+                <li>
+                  <a href="product-detail.html?product=paket-starter"
+                    >Paket Bundle</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Maggenzim. Semua hak cipta dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+  </body>
+</html>

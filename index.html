@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maggenzim - Ayam Sehat, Lingkungan Sehat</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/favicon_maggenzim/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_maggenzim/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_maggenzim/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_maggenzim/apple-touch-icon-180x180.png"
+    />
+    <meta name="theme-color" content="#4a7c59" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/LogoWebMag.png" alt="Maggenzim Logo" />
+            </a>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="magshop.html">MagShop</a></li>
+            <li><a href="magteam.html">MagTeam</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="https://wa.me/081278900987" class="cta-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Sehatkan Ayam
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-left">
+          <h1 class="hero-title">
+            Ayam Sehat, Lingkungan Terjaga, Panen Maksimal
+          </h1>
+          <p class="hero-description">
+            Maggenzim menghadirkan solusi pakan ayam berkualitas tinggi dengan
+            formulasi nutrisi lengkap yang terbukti meningkatkan produktivitas
+            ternak Anda. Dengan teknologi modern dan bahan-bahan pilihan, kami
+            memastikan ayam Anda tumbuh sehat dan memberikan hasil panen yang
+            maksimal.
+          </p>
+          <a href="https://wa.me/081278900987" class="hero-cta" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Konsultasi Gratis Sekarang
+          </a>
+        </div>
+        <div class="hero-right">
+          <img
+            src="images/hero.png"
+            alt="Produk Maggenzim"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Mengapa Memilih Maggenzim?</h2>
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="fas fa-dna"></i>
+            </div>
+            <h3>Formulasi Nutrisi Lengkap</h3>
+            <p>
+              Mengandung protein, vitamin, dan mineral esensial untuk
+              pertumbuhan pesat ayam Anda.
+            </p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Meningkatkan FCR</h3>
+            <p>
+              Konversi pakan lebih efisien, mengurangi biaya produksi hingga
+              20%.
+            </p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Meningkatkan Imunitas</h3>
+            <p>
+              Ayam lebih sehat, angka kematian rendah, dan tahan terhadap
+              berbagai penyakit.
+            </p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-icon">
+              <i class="fas fa-weight"></i>
+            </div>
+            <h3>Bobot Optimal</h3>
+            <p>
+              Terbukti menghasilkan bobot optimal. Ribuan peternak telah
+              merasakan hasilnya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+      <div class="container">
+        <h2 class="section-title">Produk Unggulan Kami</h2>
+        <div class="products-grid">
+          <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="product-image">
+              <img src="images/produk/MashMaggenzim.png" alt="Pakan Starter" />
+            </div>
+            <div class="product-info">
+              <h3>Pakan Starter</h3>
+              <p>Nutrisi lengkap untuk anak ayam umur 0-3 minggu</p>
+              <div class="product-buttons">
+                <button
+                  class="btn-detail"
+                  onclick="showProductDetail('starter')"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="product-image">
+              <img src="images/produk/CrumbMaggenzim.png" alt="Pakan Grower" />
+            </div>
+            <div class="product-info">
+              <h3>Pakan Grower</h3>
+              <p>Formula khusus untuk pertumbuhan ayam umur 4-6 minggu</p>
+              <div class="product-buttons">
+                <button
+                  class="btn-detail"
+                  onclick="showProductDetail('grower')"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="product-image">
+              <img src="images/produk/SDMaggenzim.png" alt="Smart Detector" />
+            </div>
+            <div class="product-info">
+              <h3>Smart Detector</h3>
+              <p>Alat monitoring kesehatan ayam berbasis teknologi</p>
+              <div class="product-buttons">
+                <button
+                  class="btn-detail"
+                  onclick="showProductDetail('detector')"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="section-title">Cara Pemesanan</h2>
+        <div class="contact-content">
+          <div class="contact-left">
+            <h3>Langkah Mudah Memesan</h3>
+            <div class="steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>Konsultasi</h4>
+                  <p>
+                    Hubungi kami melalui WhatsApp untuk konsultasi kebutuhan
+                    pakan
+                  </p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>Pilih Produk</h4>
+                  <p>
+                    Tentukan jenis pakan yang sesuai dengan umur dan kebutuhan
+                    ayam
+                  </p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>Konfirmasi Pesanan</h4>
+                  <p>
+                    Kami akan konfirmasi detail pesanan dan total pembayaran
+                  </p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                  <h4>Pengiriman</h4>
+                  <p>
+                    Produk akan dikirim ke alamat Anda dengan packaging aman
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right">
+            <div class="contact-info">
+              <h3>Hubungi Kami</h3>
+              <div class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                  <h4>WhatsApp</h4>
+                  <a href="https://wa.me/081278900987" target="_blank"
+                    >081278900987</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:info@maggenzim.com">info@maggenzim.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Alamat</h4>
+                  <p>Jl. Peternak Sukses No. 123<br />Jakarta, Indonesia</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Jam Operasional</h4>
+                  <p>Senin - Sabtu: 08:00 - 17:00<br />Minggu: 09:00 - 15:00</p>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/081278900987"
+              class="contact-cta"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Dapatkan Penawaran Spesial!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="logo">
+              <img src="images/LogoWebMag.png" alt="Maggenzim Logo" />
+            </div>
+            <p>
+              Exfarm Universitas Jenderal Soedirman, Fakultas Peternakan, Jl.
+              Grendeng No. 9
+            </p>
+          </div>
+          <div class="footer-center">
+            <div class="footer-nav">
+              <h4>Navigasi</h4>
+              <ul>
+                <li><a href="magshop.html">MagShop</a></li>
+                <li><a href="magteam.html">MagTeam</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>
+                  <a
+                    href="https://wa.me/081278900987"
+                    target="_blank"
+                    rel="noopener"
+                    >Pesan Maggenzim</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-products">
+              <h4>Produk Kami</h4>
+              <ul>
+                <li>
+                  <a href="product-detail.html?product=starter"
+                    >Pakan Starter</a
+                  >
+                </li>
+                <li>
+                  <a href="product-detail.html?product=grower">Pakan Grower</a>
+                </li>
+                <li>
+                  <a href="product-detail.html?product=detector"
+                    >Smart Detector</a
+                  >
+                </li>
+                <li>
+                  <a href="product-detail.html?product=paket-starter"
+                    >Paket Bundle</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Maggenzim. Semua hak cipta dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

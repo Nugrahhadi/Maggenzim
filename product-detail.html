@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Produk - Maggenzim</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/favicon_maggenzim/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_maggenzim/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_maggenzim/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_maggenzim/apple-touch-icon-180x180.png"
+    />
+    <meta name="theme-color" content="#4a7c59" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product-detail.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/LogoWebMag.png" alt="Maggenzim Logo" />
+            </a>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="magshop.html">MagShop</a></li>
+            <li><a href="magteam.html">MagTeam</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a
+            href="https://wa.me/081278900987"
+            class="cta-btn"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-whatsapp"></i>
+            Sehatkan Ayam
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="magshop.html">MagShop</a>
+          <span>/</span>
+          <span id="breadcrumb-product">Detail Produk</span>
+        </div>
+
+        <div class="product-content">
+          <div class="product-image-section">
+            <div class="main-image">
+              <img
+                id="main-product-image"
+                src="images/produk/MashMaggenzim.png"
+                alt="Product Image"
+              />
+            </div>
+          </div>
+
+          <div class="product-info-section">
+            <h1 id="product-title">Pakan Starter</h1>
+
+            <div class="product-price">
+              <span id="current-price">Rp 125.000</span>
+              <span id="price-unit">/25kg</span>
+              <span id="original-price" class="original-price">Rp 140.000</span>
+            </div>
+
+            <div class="product-description">
+              <p id="product-desc">
+                Pakan khusus untuk anak ayam umur 0-3 minggu dengan formulasi
+                nutrisi yang tepat untuk pertumbuhan awal yang optimal.
+                Mengandung protein tinggi dan vitamin lengkap untuk mendukung
+                perkembangan ayam yang sehat.
+              </p>
+            </div>
+
+            <div class="product-specs">
+              <h3>Spesifikasi Produk:</h3>
+              <ul id="product-specs-list">
+                <li><strong>Protein:</strong> 22-24%</li>
+                <li><strong>Lemak:</strong> 3-5%</li>
+                <li><strong>Serat:</strong> Maks 5%</li>
+                <li><strong>Abu:</strong> Maks 7%</li>
+                <li><strong>Kadar Air:</strong> Maks 12%</li>
+              </ul>
+            </div>
+
+            <div class="quantity-selector">
+              <label for="quantity">Jumlah:</label>
+              <div class="quantity-controls">
+                <button onclick="decreaseQuantity()">-</button>
+                <input
+                  type="number"
+                  id="quantity"
+                  value="1"
+                  min="1"
+                  max="100"
+                />
+                <button onclick="increaseQuantity()">+</button>
+              </div>
+              <span class="quantity-unit">karung</span>
+            </div>
+
+            <div class="total-price">
+              <span>Total: <strong id="total-amount">Rp 125.000</strong></span>
+            </div>
+
+            <div class="action-buttons">
+              <a
+                href="#"
+                id="whatsapp-order"
+                class="btn-order"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-whatsapp"></i>
+                Pesan Sekarang
+              </a>
+              <button class="btn-consult" onclick="openConsultation()">
+                <i class="fas fa-comments"></i>
+                Konsultasi Gratis
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-tabs">
+      <div class="container">
+        <div class="tabs-header">
+          <button class="tab-btn active" onclick="showTab('benefits')">
+            Manfaat
+          </button>
+          <button class="tab-btn" onclick="showTab('usage')">
+            Cara Penggunaan
+          </button>
+          <button class="tab-btn" onclick="showTab('ingredients')">
+            Komposisi
+          </button>
+        </div>
+
+        <div class="tabs-content">
+          <div id="benefits" class="tab-content active">
+            <h3>Manfaat Produk</h3>
+            <div class="benefits-grid">
+              <div class="benefit-item">
+                <i class="fas fa-seedling"></i>
+                <h4>Pertumbuhan Optimal</h4>
+                <p>Mendukung pertumbuhan cepat dan sehat pada anak ayam</p>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Imunitas Kuat</h4>
+                <p>Meningkatkan daya tahan tubuh terhadap penyakit</p>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-heartbeat"></i>
+                <h4>Kesehatan Pencernaan</h4>
+                <p>Prebiotik alami untuk kesehatan saluran pencernaan</p>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-chart-line"></i>
+                <h4>FCR Efisien</h4>
+                <p>Konversi pakan yang efisien untuk hasil maksimal</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="usage" class="tab-content">
+            <h3>Petunjuk Penggunaan</h3>
+            <div class="usage-steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>Persiapan</h4>
+                  <p>
+                    Pastikan tempat pakan bersih dan kering sebelum pemberian
+                    pakan
+                  </p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>Takaran</h4>
+                  <p>Berikan 20-25 gram per ekor per hari untuk anak ayam</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>Frekuensi</h4>
+                  <p>Bagi menjadi 3-4 kali pemberian sepanjang hari</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                  <h4>Air Minum</h4>
+                  <p>Pastikan air minum selalu tersedia dan segar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="ingredients" class="tab-content">
+            <h3>Komposisi & Kandungan Gizi</h3>
+            <div class="ingredients-content">
+              <div class="ingredients-list">
+                <h4>Bahan Utama:</h4>
+                <ul>
+                  <li>Jagung kuning pilihan</li>
+                  <li>Tepung ikan berkualitas tinggi</li>
+                  <li>Bungkil kedelai</li>
+                  <li>Tepung tulang</li>
+                  <li>Minyak sawit</li>
+                  <li>Premix vitamin & mineral</li>
+                  <li>Probiotik alami</li>
+                </ul>
+              </div>
+              <div class="nutrition-table">
+                <h4>Kandungan Gizi per 100g:</h4>
+                <table>
+                  <tr>
+                    <td>Protein Kasar</td>
+                    <td>22-24%</td>
+                  </tr>
+                  <tr>
+                    <td>Lemak Kasar</td>
+                    <td>3-5%</td>
+                  </tr>
+                  <tr>
+                    <td>Serat Kasar</td>
+                    <td>Maks 5%</td>
+                  </tr>
+                  <tr>
+                    <td>Abu</td>
+                    <td>Maks 7%</td>
+                  </tr>
+                  <tr>
+                    <td>Kadar Air</td>
+                    <td>Maks 12%</td>
+                  </tr>
+                  <tr>
+                    <td>Kalsium</td>
+                    <td>0.9-1.2%</td>
+                  </tr>
+                  <tr>
+                    <td>Fosfor</td>
+                    <td>0.6-0.9%</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+      <div class="container">
+        <h2>Produk Terkait</h2>
+        <div class="related-grid">
+          <div class="related-card">
+            <img src="images/produk/CrumbMaggenzim.png" alt="Pakan Grower" />
+            <h3>Pakan Grower</h3>
+            <p>Rp 120.000/25kg</p>
+            <a href="product-detail.html?product=grower" class="btn-view"
+              >Lihat Detail</a
+            >
+          </div>
+          <div class="related-card">
+            <img src="images/produk/SDMaggenzim.png" alt="Smart Detector" />
+            <h3>Smart Detector</h3>
+            <p>Rp 250.000/unit</p>
+            <a href="product-detail.html?product=detector" class="btn-view"
+              >Lihat Detail</a
+            >
+          </div>
+          <div class="related-card">
+            <img src="images/produk/MashMaggenzim.png" alt="Pakan Starter" />
+            <h3>Pakan Starter</h3>
+            <p>Rp 125.000/25kg</p>
+            <a href="product-detail.html?product=starter" class="btn-view"
+              >Lihat Detail</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="logo">
+              <img src="images/LogoWebMag.png" alt="Maggenzim Logo" />
+            </div>
+            <p>
+              Exfarm Universitas Jenderal Soedirman, Fakultas Peternakan, Jl.
+              Grendeng No. 9
+            </p>
+          </div>
+          <div class="footer-center">
+            <div class="footer-nav">
+              <h4>Navigasi</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="magshop.html">MagShop</a></li>
+                <li><a href="magteam.html">MagTeam</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>
+                  <a
+                    href="https://wa.me/081278900987"
+                    target="_blank"
+                    rel="noopener"
+                    >Pesan Maggenzim</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-products">
+              <h4>Produk Kami</h4>
+              <ul>
+                <li>
+                  <a href="product-detail.html?product=starter"
+                    >Pakan Starter</a
+                  >
+                </li>
+                <li>
+                  <a href="product-detail.html?product=grower">Pakan Grower</a>
+                </li>
+                <li>
+                  <a href="product-detail.html?product=detector"
+                    >Smart Detector</a
+                  >
+                </li>
+                <li>
+                  <a href="product-detail.html?product=paket-starter"
+                    >Paket Bundle</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="social-links">
+              <a href="#" target="_blank" rel="noopener" title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" target="_blank" rel="noopener" title="TikTok"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="#" target="_blank" rel="noopener" title="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Maggenzim. Semua hak cipta dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/product-detail.js"></script>
+  </body>
+</html>
