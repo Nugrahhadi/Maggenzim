@@ -131,7 +131,7 @@ body {
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -175,11 +175,12 @@ body {
 }
 
 .hero-image {
-  width: 100%;
+  width: 700px;
   height: auto;
   border-radius: 20px;
   /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1); */
   animation: float 6s ease-in-out infinite;
+  margin-right: -100px;
 }
 
 @keyframes float {
