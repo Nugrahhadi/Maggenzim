@@ -23,18 +23,24 @@ function initializeFAQ() {
       const faqItem = this.parentElement;
       const isActive = faqItem.classList.contains("active");
 
-      // Close all other FAQ items
-      document.querySelectorAll(".faq-item").forEach((item) => {
-        if (item !== faqItem) {
-          item.classList.remove("active");
-        }
-      });
-
-      // Toggle current FAQ item
-      if (isActive) {
-        faqItem.classList.remove("active");
+      // Pada mobile - hanya toggle item yang diklik
+      if (window.innerWidth <= 768) {
+        faqItem.classList.toggle("active");
       } else {
-        faqItem.classList.add("active");
+        // Pada desktop - tutup yang lain, buka yang diklik
+        // Close all other FAQ items
+        document.querySelectorAll(".faq-item").forEach((item) => {
+          if (item !== faqItem) {
+            item.classList.remove("active");
+          }
+        });
+
+        // Toggle current FAQ item
+        if (isActive) {
+          faqItem.classList.remove("active");
+        } else {
+          faqItem.classList.add("active");
+        }
       }
     });
   });

@@ -352,16 +352,130 @@
   }
 }
 
+/* FAQ Mobile Responsive */
+@media (max-width: 768px) {
+  /* FAQ Header Mobile */
+  .faq-header {
+    padding: 120px 0 40px; /* Padding dengan navbar */
+  }
+
+  .faq-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .faq-header p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  /* FAQ Content Mobile */
+  .faq-content {
+    padding: 40px 0;
+  }
+
+  /* Hide FAQ Categories pada Mobile */
+  .faq-categories {
+    display: none;
+  }
+
+  /* FAQ Items Mobile - Hanya tampilkan pertanyaan */
+  .faq-list {
+    padding: 0 1rem;
+    margin-top: 0; /* Remove margin karena categories hidden */
+  }
+
+  .faq-item {
+    margin-bottom: 1rem;
+  }
+
+  /* FAQ Answer tersembunyi default pada mobile */
+  .faq-answer {
+    display: none; /* Sembunyikan jawaban default */
+    padding: 0 1.2rem 1.2rem;
+  }
+
+  /* Tampilkan jawaban hanya ketika diklik */
+  .faq-item.active .faq-answer {
+    display: block;
+    animation: slideDown 0.3s ease;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      max-height: 0;
+    }
+    to {
+      opacity: 1;
+      max-height: 200px;
+    }
+  }
+
+  .faq-question {
+    padding: 1.2rem;
+    cursor: pointer; /* Menunjukkan bahwa bisa diklik */
+  }
+
+  .faq-question h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .faq-toggle {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* FAQ CTA Mobile */
+  .faq-cta {
+    padding: 60px 0;
+  }
+
+  .faq-cta .container {
+    padding: 0 1rem;
+  }
+
+  .faq-cta h2 {
+    font-size: 2rem;
+  }
+
+  .faq-cta p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .faq-cta .btn-primary {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+}
+
 @media (max-width: 576px) {
+  /* Extra small screens */
+  .faq-header h1 {
+    font-size: 1.8rem;
+  }
+
   .faq-categories {
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
   }
 
   .category-btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     justify-content: center;
+    padding: 0.7rem 1rem;
   }
 
   .faq-question {
@@ -372,7 +486,17 @@
     font-size: 0.95rem;
   }
 
+  .faq-toggle {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+
   .faq-item.active .faq-answer {
-    padding: 1rem;
+    padding: 0 1rem 1rem;
+  }
+
+  .faq-cta h2 {
+    font-size: 1.8rem;
   }
 }

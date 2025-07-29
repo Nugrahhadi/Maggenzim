@@ -454,6 +454,233 @@
   transform: rotateY(180deg);
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Team Header Mobile */
+  .team-header {
+    padding: 120px 0 40px; /* Padding dengan navbar */
+  }
+
+  .team-header h1 {
+    font-size: 2rem;
+  }
+
+  .team-header p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  /* Team Grid Mobile */
+  .team-members {
+    padding: 40px 0;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  /* Team Card Mobile - Natural Colors */
+  .team-card {
+    height: 450px;
+    cursor: pointer;
+  }
+
+  .team-card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-inner {
+    transition: transform 0.6s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); /* Shadow lebih lembut */
+  }
+
+  /* Remove hover effect on mobile */
+  .team-card:hover .card-inner {
+    transform: none;
+  }
+
+  .team-card:hover .member-image img {
+    transform: none;
+  }
+
+  /* Card Front Mobile - Natural Design */
+  .card-front {
+    background: #ffffff; /* Background putih natural */
+  }
+
+  .member-image {
+    aspect-ratio: 4 / 3;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: none; /* Remove transition untuk mobile */
+  }
+
+  /* Remove overlay pada mobile */
+  .member-image::after {
+    display: none;
+  }
+
+  .member-info {
+    padding: 1.5rem;
+    background: #fafafa; /* Background sedikit abu untuk kontras natural */
+  }
+
+  .member-info h3 {
+    font-size: 1.2rem;
+    color: #2c5530;
+  }
+
+  .position {
+    font-size: 0.9rem;
+    color: #6b7280; /* Warna abu natural */
+  }
+
+  .member-description p {
+    font-size: 0.9rem;
+    color: #4b5563; /* Warna text natural */
+    line-height: 1.5;
+  }
+
+  /* Card Back Mobile - Sama seperti Desktop */
+  .card-back {
+    padding: 1.5rem;
+    background: linear-gradient(
+      135deg,
+      #4a7c59,
+      #2c5530
+    ); /* Sama seperti desktop */
+    color: white; /* Text putih seperti desktop */
+  }
+
+  .social-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: white; /* Putih seperti desktop */
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .social-links a {
+    width: 45px;
+    height: 45px;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.1); /* Background sama seperti desktop */
+    color: white; /* Icon putih seperti desktop */
+    border: none; /* Hapus border */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Sama seperti desktop */
+  }
+
+  .social-links a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover sama seperti desktop */
+    transform: translateY(-2px) scale(1.1);
+  }
+
+  .social-links i {
+    font-size: 1rem;
+  }
+
+  /* Values Mobile */
+  .company-values {
+    padding: 60px 0;
+  }
+
+  .company-values h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .value-item {
+    padding: 1.5rem 1rem;
+    background: #fafafa; /* Background natural */
+    border: 1px solid #e5e7eb;
+  }
+
+  .value-item:hover {
+    background: #f0f9f0;
+    border-color: #2c5530;
+  }
+
+  .value-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #2c5530, #4a7c59);
+  }
+
+  .value-item h3 {
+    font-size: 1.1rem;
+  }
+
+  /* CTA Mobile */
+  .team-cta {
+    padding: 60px 0;
+  }
+
+  .cta-content {
+    padding: 0 1rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .team-card {
+    height: 400px;
+  }
+
+  .team-grid {
+    gap: 1rem;
+  }
+
+  .member-info {
+    padding: 1rem;
+  }
+
+  .card-back {
+    padding: 1rem;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .team-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .company-values h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
 /* Print Styles */
 @media print {
   .team-card {
