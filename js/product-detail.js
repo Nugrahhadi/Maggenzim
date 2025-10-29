@@ -527,7 +527,7 @@ function updateWhatsAppLink() {
     "/",
     ""
   )}%0ATotal: ${formatCurrency(total)}%0A%0ABisa tolong diproses?`;
-  const whatsappLink = `https://wa.me/081278900987?text=${message}`;
+  const whatsappLink = `https://wa.me/6281287787857?text=${message}`;
 
   document.getElementById("whatsapp-order").href = whatsappLink;
 }
@@ -547,8 +547,13 @@ function showTab(tabName) {
   // Show selected tab content
   document.getElementById(tabName).classList.add("active");
 
-  // Add active class to clicked button
-  event.target.classList.add("active");
+  // Add active class to correct button
+  const activeButton = document.querySelector(
+    `.tab-btn[onclick="showTab('${tabName}')"]`
+  );
+  if (activeButton) {
+    activeButton.classList.add("active");
+  }
 }
 
 // Open consultation
@@ -556,7 +561,7 @@ function openConsultation() {
   const productId = getUrlParameter("product") || "starter";
   const product = productDetailData[productId];
   const message = `Halo, saya ingin konsultasi tentang ${product.name}. Bisa tolong dijelaskan lebih detail?`;
-  const whatsappLink = `https://wa.me/081278900987?text=${encodeURIComponent(
+  const whatsappLink = `https://wa.me/6281287787857?text=${encodeURIComponent(
     message
   )}`;
   window.open(whatsappLink, "_blank");
@@ -565,6 +570,9 @@ function openConsultation() {
 // Initialize page
 document.addEventListener("DOMContentLoaded", function () {
   updateProductDetails();
+
+  // Set default tab to ingredients
+  showTab("ingredients");
 
   // Add event listener to quantity input
   document.getElementById("quantity").addEventListener("input", function () {

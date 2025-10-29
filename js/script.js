@@ -80,7 +80,7 @@ function showProductDetail(productId) {
         <img src="${product.image}" alt="${product.name}">
         <p>${product.description}</p>
         
-        <a href="https://wa.me/081278900987?text=Halo, saya tertarik dengan ${
+        <a href="https://wa.me/6281287787857?text=Halo, saya tertarik dengan ${
           product.name
         }. Bisa tolong berikan informasi lebih lanjut?" 
            class="btn-whatsapp" target="_blank">

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Visi & Misi Maggenzim - Penyedia Pakan Ayam Fitobiotik Terpercaya
+    </title>
+    <meta
+      name="description"
+      content="Visi dan misi Maggenzim dalam menyediakan pakan ayam berkualitas, terpercaya dan terjangkau untuk peternak Indonesia dengan teknologi fitobiotik dan smart detector IoT."
+    />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon_maggenzim/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_maggenzim/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_maggenzim/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_maggenzim/apple-touch-icon-180x180.png" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Visi Misi Specific Styles */
+      .vision-mission-hero {
+        background: linear-gradient(
+            135deg,
+            rgba(44, 85, 48, 0.95),
+            rgba(74, 124, 89, 0.95)
+          ),
+          url("images/hero-bg.jpg") center/cover;
+        padding: 120px 0 80px;
+        text-align: center;
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .vision-mission-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+            circle at 30% 20%,
+            rgba(168, 213, 186, 0.3) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 70% 80%,
+            rgba(168, 213, 186, 0.2) 0%,
+            transparent 50%
+          );
+        animation: float 20s ease-in-out infinite;
+      }
+
+      .vision-mission-hero .container {
+        position: relative;
+        z-index: 1;
+      }
+
+      .vision-mission-hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .vision-mission-hero p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .vision-mission-content {
+        margin-top: 40px;
+        padding: 80px 0;
+        background: white;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .section-title h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2c5530;
+        margin-bottom: 1rem;
+      }
+
+      .section-title p {
+        font-size: 1.1rem;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+
+      .vision-box {
+        background: linear-gradient(135deg, #f8fdf9, #e8f5e8);
+        border-radius: 20px;
+        padding: 3rem;
+        margin-bottom: 4rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(44, 85, 48, 0.1);
+      }
+
+      .vision-box h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #2c5530;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .vision-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 4rem;
+      }
+
+      .value-card {
+        background: white;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(44, 85, 48, 0.1);
+      }
+
+      .value-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(135deg, #4a7c59, #2c5530);
+      }
+
+      .value-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 50px rgba(44, 85, 48, 0.15);
+      }
+
+      .value-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #4a7c59, #2c5530);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        margin: 0 auto 1.5rem;
+      }
+
+      .value-card h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2c5530;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .value-card ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .value-card li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.8rem;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .value-card li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #4a7c59;
+        font-weight: bold;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateX(0px) translateY(0px);
+        }
+        25% {
+          transform: translateX(10px) translateY(-10px);
+        }
+        50% {
+          transform: translateX(-5px) translateY(5px);
+        }
+        75% {
+          transform: translateX(-10px) translateY(-5px);
+        }
+      }
+
+      /* Mobile Responsive */
+      @media (max-width: 768px) {
+        .vision-mission-hero {
+          padding: 120px 0 60px;
+        }
+
+        .vision-mission-hero h1 {
+          font-size: 2.2rem;
+        }
+
+        .vision-mission-hero p {
+          font-size: 1rem;
+          padding: 0 1rem;
+        }
+
+        .vision-mission-content {
+          padding: 60px 0;
+        }
+
+        .section-title h2 {
+          font-size: 2rem;
+        }
+
+        .vision-box {
+          padding: 2rem 1.5rem;
+          margin-bottom: 3rem;
+        }
+
+        .vision-box h3 {
+          font-size: 1.6rem;
+        }
+
+        .vision-text {
+          font-size: 1rem;
+        }
+
+        .values-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+          margin-top: 2rem;
+        }
+
+        .value-card {
+          padding: 1.5rem;
+        }
+
+        .value-card h4 {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/LogoWebMag.png" alt="Maggenzim Logo" />
+            </a>
+          </div>
+          <ul class="nav-menu desktop-menu">
+            <li><a href="magshop.html">MagShop</a></li>
+            <li class="dropdown">
+              <a href="#" class="#"
+                >Tentang Kami <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="magteam.html"
+                    ><i class="fas fa-users"></i>The Brains Maggenzim</a
+                  >
+                </li>
+                <li>
+                  <a href="visi-misi.html"
+                    ><i class="fas fa-eye"></i>Visi Misi Maggenzim</a
+                  >
+                </li>
+                <li>
+                  <a href="sekilas-maggenzim.html"
+                    ><i class="fas fa-info-circle"></i>Sekilas Maggenzim</a
+                  >
+                </li>
+                <li>
+                  <a href="keberlanjutan.html"
+                    ><i class="fas fa-leaf"></i>Keberlanjutan dan Peran
+                    Maggenzim</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="https://wa.me/081287787857" class="cta-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Sehatkan Ayam
+          </a>
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="magshop.html">MagShop</a></li>
+            <li class="mobile-dropdown">
+              <a href="#" class="mobile-dropdown-toggle"
+                >Tentang Kami <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="mobile-dropdown-menu">
+                <li>
+                  <a href="magteam.html"
+                    ><i class="fas fa-users"></i>The Brains Maggenzim</a
+                  >
+                </li>
+                <li>
+                  <a href="visi-misi.html"
+                    ><i class="fas fa-eye"></i>Visi Misi Maggenzim</a
+                  >
+                </li>
+                <li>
+                  <a href="sekilas-maggenzim.html"
+                    ><i class="fas fa-info-circle"></i>Sekilas Maggenzim</a
+                  >
+                </li>
+                <li>
+                  <a href="keberlanjutan.html"
+                    ><i class="fas fa-leaf"></i>Keberlanjutan dan Peran
+                    Maggenzim</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="mobile-cta">
+              <a
+                href="https://wa.me/081287787857"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-whatsapp"></i>
+                Sehatkan Ayam
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </section>
+
+    <!-- Vision & Mission Content -->
+    <section class="vision-mission-content">
+      <div class="container">
+        <!-- Vision -->
+        <div class="vision-box">
+          <h3>Visi Kami</h3>
+          <p class="vision-text">
+            Menjadi penyedia berkualitas dan terpercaya di bidang produk pakan
+            berprotein, sehat, dan terjangkau untuk peternak Indonesia, dalam
+            upaya memberikan manfaat untuk lingkungan, hewan ternak dan peternak
+            di Indonesia.
+          </p>
+        </div>
+
+        <!-- Values Grid -->
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h4>Berkualitas</h4>
+            <ul>
+              <li>
+                Pakan dengan kualitas yang dibutuhkan peternak mandiri skala
+                kecil-menengah
+              </li>
+              <li>
+                Smart detector berbasis IoT yang dibutuhkan dan membantu
+                keberlangsungan kegiatan ternak
+              </li>
+              <li>
+                Memastikan narasi yang dibangun sejalan dengan hasil yang
+                didapatkan oleh peternak
+              </li>
+            </ul>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h4>Terpercaya</h4>
+            <ul>
+              <li>Dapat diandalkan oleh peternak</li>
+              <li>
+                Konsisten, aman, berkualitas baik, produk inovatif, dan dapat
+                dipercaya
+              </li>
+              <li>Bertanggung jawab kepada peternak dan lingkungan sekitar</li>
+            </ul>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <h4>Terjangkau</h4>
+            <ul>
+              <li>Mengutamakan peternak mandiri skala kecil-menengah</li>
+              <li>Kualitas baik dengan harga terjangkau</li>
+              <li>
+                Berperan aktif dalam menanggulangi pakan yang mahal dan
+                keterbatakan pakan
+              </li>
+              <li>
+                Penyedia pakan yang efisien dan efektif, mengarah pada
+                keuntungan jangka panjang yang mendukung kelangsungan usaha,
+                peternak, dan lingkungan
+              </li>
+            </ul>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h4>Produk yang Berprotein dan Sehat</h4>
+            <ul>
+              <li>
+                Produk memiliki protein tinggi yang dapat mempercepat kebutuhan
+                nutrisi ayam fase pre-starter dan starter
+              </li>
+              <li>
+                Produk mengandung probiotik alami (fitobiotik) yang dapat
+                memperkuat sistem pencernaan dan imun pada ayam
+              </li>
+              <li>
+                Produk tidak menghasilkan amonia dan metana berlebih pada feses
+                ayam, yang berdampak pada kualitas udara yang bersih dan
+                mengurangi emisi gas rumah kaca
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="logo">
+              <img src="images/LogoWebMag.png" alt="Maggenzim Logo" />
+            </div>
+            <p>
+              Exfarm Universitas Jenderal Soedirman, Fakultas Peternakan, Jl.
+              Grendeng No. 9
+            </p>
+          </div>
+          <div class="footer-center">
+            <div class="footer-nav">
+              <h4>Navigasi</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="magteam.html">MagTeam</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>
+                  <a
+                    href="https://wa.me/6281287787857"
+                    target="_blank"
+                    rel="noopener"
+                    >Pesan Maggenzim</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-products">
+              <h4>Produk Kami</h4>
+              <ul>
+                <li>
+                  <a href="product-detail.html?product=starter"
+                    >Pakan Starter</a
+                  >
+                </li>
+                <li>
+                  <a href="product-detail.html?product=grower">Pakan Grower</a>
+                </li>
+                <li>
+                  <a href="product-detail.html?product=detector"
+                    >Smart Detector</a
+                  >
+                </li>
+                <li>
+                  <a href="product-detail.html?product=paket-starter"
+                    >Paket Bundle</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Maggenzim. Semua hak cipta dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/mobile.js"></script>
+  </body>
+</html>

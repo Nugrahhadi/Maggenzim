@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function initHamburgerMenu() {
     const hamburger = document.querySelector(".hamburger");
     const mobileMenu = document.querySelector(".mobile-menu");
-    const mobileMenuLinks = document.querySelectorAll(".mobile-menu a");
+    const mobileMenuLinks = document.querySelectorAll(
+      ".mobile-menu a:not(.mobile-dropdown-toggle)"
+    );
 
     if (hamburger && mobileMenu) {
       // Toggle mobile menu
@@ -14,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.toggle("menu-open");
       });
 
-      // Close menu when clicking on links
+      // Close menu when clicking on links (except dropdown toggles)
       mobileMenuLinks.forEach((link) => {
         link.addEventListener("click", function () {
           hamburger.classList.remove("active");
@@ -41,6 +43,33 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     }
+  }
+
+  // Mobile Dropdown Functionality
+  function initMobileDropdown() {
+    const mobileDropdownToggles = document.querySelectorAll(
+      ".mobile-dropdown-toggle"
+    );
+
+    mobileDropdownToggles.forEach((toggle) => {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        const dropdown = this.parentElement;
+        const isActive = dropdown.classList.contains("active");
+
+        // Close all other dropdowns
+        document
+          .querySelectorAll(".mobile-dropdown.active")
+          .forEach((activeDropdown) => {
+            if (activeDropdown !== dropdown) {
+              activeDropdown.classList.remove("active");
+            }
+          });
+
+        // Toggle current dropdown
+        dropdown.classList.toggle("active");
+      });
+    });
   }
 
   // Team Card Flip Functionality (Mobile Only)
@@ -213,6 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function init() {
     try {
       initHamburgerMenu();
+      initMobileDropdown();
       initTeamCardFlip();
       initSmoothScrolling();
       initTouchGestures();
