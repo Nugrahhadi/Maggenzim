@@ -164,12 +164,12 @@
           </div>
 
           <div class="product-info-section">
-            <h1 id="product-title">Pakan Starter</h1>
+            <h1 id="product-title">Pakan Pre-Starter</h1>
 
             <div class="product-price">
-              <span id="current-price">Rp 125.000</span>
+              <span id="current-price">Rp 260.000</span>
               <span id="price-unit">/25kg</span>
-              <span id="original-price" class="original-price">Rp 140.000</span>
+              <!-- <span id="original-price" class="original-price">Rp 140.000</span> -->
             </div>
 
             <div class="product-description">
@@ -184,7 +184,7 @@
             <div class="product-specs">
               <h3>Spesifikasi Produk:</h3>
               <ul id="product-specs-list">
-                <li><strong>Protein:</strong> 22-24%</li>
+                <li><strong>Protein:</strong> 22-28%</li>
                 <li><strong>Lemak:</strong> 3-5%</li>
                 <li><strong>Serat:</strong> Maks 5%</li>
                 <li><strong>Abu:</strong> Maks 7%</li>
@@ -196,20 +196,14 @@
               <label for="quantity">Jumlah:</label>
               <div class="quantity-controls">
                 <button onclick="decreaseQuantity()">-</button>
-                <input
-                  type="number"
-                  id="quantity"
-                  value="1"
-                  min="1"
-                  max="100"
-                />
+                <input type="number" id="quantity" value="1" min="1" max="10" />
                 <button onclick="increaseQuantity()">+</button>
               </div>
               <span class="quantity-unit">karung</span>
             </div>
 
             <div class="total-price">
-              <span>Total: <strong id="total-amount">Rp 125.000</strong></span>
+              <span>Total: <strong id="total-amount">Rp 260.000</strong></span>
             </div>
 
             <div class="action-buttons">
@@ -236,7 +230,7 @@
     <section class="product-tabs">
       <div class="container">
         <div class="tabs-header">
-          <button class="tab-btn active" onclick="showTab('ingredients')">
+          <button class="tab-btn" onclick="showTab('ingredients')">
             Komposisi
           </button>
           <button class="tab-btn" onclick="showTab('benefits')">Manfaat</button>
@@ -252,13 +246,12 @@
               <div class="ingredients-list">
                 <h4>Bahan Utama:</h4>
                 <ul>
-                  <li>Jagung kuning pilihan</li>
-                  <li>Tepung ikan berkualitas tinggi</li>
-                  <li>Bungkil kedelai</li>
-                  <li>Tepung tulang</li>
-                  <li>Minyak sawit</li>
+                  <li>Maggot kering</li>
+                  <li>Fermentasi daun ketapang</li>
+                  <li>Fermentasi kulit kopi</li>
+                  <li>Onggok</li>
+                  <li>Bekatul</li>
                   <li>Premix vitamin & mineral</li>
-                  <li>Probiotik alami</li>
                 </ul>
               </div>
               <div class="nutrition-table">
@@ -266,7 +259,7 @@
                 <table>
                   <tr>
                     <td>Protein Kasar</td>
-                    <td>22-24%</td>
+                    <td>22-28%</td>
                   </tr>
                   <tr>
                     <td>Lemak Kasar</td>
